@@ -40,27 +40,26 @@ h3{
     margin-left:auto;
     margin-right:auto;
 }
-#grey{
+
+#navbar{
     margin-bottom: auto;
     background-color: grey;
 }
 /*
+#navbar a{
+    padding:12px;
+    text-align:center;
+}
+
 div.profile{
   position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  overflow-x:hidden;
+  position: fixed;
+  top:0;
   background-color: yellow;
   font-size: 14px;
   width:20%;
-  margin: 0;
-  padding:0;
 }
 */
-#navbar{
-position: -webkit-sticky;
-position: top;
-}
 .listcenter{
     margin:auto;
     width:25%;
