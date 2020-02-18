@@ -11,21 +11,30 @@ table, th, td{
     <meta charset="UTF-8", name="viewport", content="width=device-width", initial-scale="1.0">
     <title>Brian's Profile</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- BootStrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
-<div class="topnav" id="navbar">
-    <span style="color:red;font-weight:bold">Menu</span>
-    <a href="#BasicInfo">Profile</a>
-    <a href="#Education">Education</a>
-    <a href="#Experience">Work Experience</a>
-    <a href="#ProgramSkills">Programming Skills</a>
-    <a href="#Interests">General Interests</a>
-    <a href="#Websites">Favorite Websites</a>
-    <a href="#Projects">Projects</a>
-    <i class="fas fa-heart"></i>
-</div>
-<body style="background-color:#F9A68B;margin:0">
+<body style="background-color:#F9A68B; padding-top:70px">
 
-    <div class="profile">
+    <nav class="navbar navbar-expand-sm fixed-top bg-dark">
+    <ul class="navbar-nav">
+    <a class="nav-link" href="#BasicInfo">Profile</a>
+    <a class="nav-link" href="#Education">Education</a>
+    <a class="nav-link" href="#Experience">Work Experience</a>
+    <a class="nav-link" href="#ProgramSkills">Programming Skills</a>
+    <a class="nav-link" href="#Interests">General Interests</a>
+    <a class="nav-link" href="#Websites">Favorite Websites</a>
+    <a class="nav-link" href="#Projects">Projects</a>
+    <i class="fas fa-heart"></i>
+    </ul>
+</nav>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="profile">
         <a id="BasicInfo"></a>
         <h1 class="center">Basic Information</h1>
         <img src="https://github.com/Brian-Khuu/CUS1172_Assests/blob/master/edit3.png?raw=true" style="width:150px;height:150px;" class="centerImage">
@@ -34,7 +43,6 @@ table, th, td{
                 <p>Major:Computer Science</p>
             </div>
     </div>
-
     <div>
         <a id="Education"></a>
         <h1>Education</h1>
@@ -42,31 +50,7 @@ table, th, td{
                 <p>Currently a student at St.Johns University working towards a Computer Science Degree</p>
             </div>
     </div>
-
-    <div>
-        <a id="Experience"></a>
-        <h1>Work Experience/Internships</h1>
-            <div>
-                <h2 class="center">Bimser International</h2>
-                <p class="center">Presales Software Engineer Intern (2019)</p>
-                    <ul class="listcenter">
-                        <li>Studied and Evaluated Software Products on the market</li>
-                        <li>Benchmarked products and performed SWOT analysis</li>
-                        <li>Experience in presenting webinars and demo sessions</li>
-                    </ul>
-            </div>
-            <div>
-                <h2 class="center">Middle Village Pharmacy</h2>
-                <p class="center">Assistant(2012-2016)</p>
-                    <ul class="listcenter">
-                        <li>Interacted with customers on a daily basis and provided customer service</li>
-                        <li>Reviewed orders obtained from wholesalers and helped stock the store</li>
-                        <li>Experience in delivery services</li>
-                    </ul>
-            </div>
-    </div>
-
-    <div>
+    <div class="">
         <a id="ProgramSkills"></a>
         <h1>Programming Skills</h1>
             <div>
@@ -93,12 +77,41 @@ table, th, td{
                 </table>
             </div>
     </div>
-
+        </div>
+    <div class="col-md-8">
     <div>
+        <a id="Experience"></a>
+        <h1>Work Experience/Internships</h1>
+<div class="row">
+
+
+            <div class="col container">
+                <h2 class="center">Bimser International</h2>
+                <p class="center">Presales Software Engineer Intern (2019)</p>
+                    <ul class="listcenter">
+                        <li>Studied and Evaluated Software Products on the market</li>
+                        <li>Benchmarked products and performed SWOT analysis</li>
+                        <li>Experience in presenting webinars and demo sessions</li>
+                    </ul>
+            </div>
+            <div class="col container">
+                <h2 class="center">Middle Village Pharmacy</h2>
+                <p class="center">Assistant(2012-2016)</p>
+                    <ul class="listcenter">
+                        <li>Interacted with customers on a daily basis and provided customer service</li>
+                        <li>Reviewed orders obtained from wholesalers and helped stock the store</li>
+                        <li>Experience in delivery services</li>
+                    </ul>
+            </div>
+    </div>
+        </div>
+    </div>
+
+    <div class="container">
         <a id="Interests"></a>
         <h1>General Interests</h1>
-            <div>
-                <div>
+            <div class="row">
+                <div class="col">
                     <h2>Music</h2>
                         <p>Here is one of my favorite songs.</p>
                             <h3>FireFlies</h3>
@@ -107,7 +120,7 @@ table, th, td{
                                 <input type="submit" value="Go to Source" class="centerImage2">
                             </form>
                 </div>
-                <div>
+                <div class="col">
                     <h2>TV Show</h2>
                         <p>Here is a scene from my favorite TV show as a kid.</p>
                             <h3>Spongebob</h3>
@@ -116,7 +129,7 @@ table, th, td{
                                 <input type="submit" value="Go to Source" class="centerImage2">
                             </form>
                 </div>
-                <div>
+                <div class="col">
                     <h2>Film</h2>
                         <p>I don't watch many films, so here is the most recent one that I liked.</p>
                             <h3>Your Name</h3>
@@ -128,34 +141,48 @@ table, th, td{
             </div>
     </div>
 
-    <div>
+    <div class="container">
         <a id="Websites"></a>
         <h1>Favorite Websites</h1>
-            <div>
-                <ol class="listcenter">
-                    <li><a class="customize" href="https://stackoverflow.com/" target="_blank">Stackoverflow</a></li>
+            <div class="row">
+                <div class="col">
+                    <a class="customize" href="https://stackoverflow.com/" target="_blank">Stackoverflow</a>
                     <img src="https://cdn.freebiesupply.com/logos/large/2x/stackoverflow-com-logo-png-transparent.png" width="150" height="150" class="centerImage2">
                     <p>A website to help confused programmers.</p>
-                    <li><a class="customize" href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                </div>
+                <div class="col">
+                    <a class="customize" href="https://www.youtube.com/" target="_blank">Youtube</a>
                     <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c548.png" width="200" height="150" class="centerImage2">
                     <p>A popular video hosting website. Many people can waste hours here.</p>
-                    <li><a class="customize" href="https://www.reddit.com/" target="_blank">Reddit</a></li>
+                </div>
+                <div class="col">
+                    <a class="customize" href="https://www.reddit.com/" target="_blank">Reddit</a>
                     <img src="https://1000logos.net/wp-content/uploads/2017/05/Reddit-logo-500x412.png" width="175" height="150" class="centerImage2">
                     <p>A social media website. Many people can waste lives here.</p>
-                </ol>
+                </div>
             </div>
     </div>
-    <div>
+    <div class="container">
         <a id="Projects"></a>
         <h1>Projects in course</h1>
             <div>
-                <h2 class="center">Project 1</h2>
+                <h2 class="center">Project 1, Milestone 1</h2>
                     <p>
                         This webpage is the first project of CUS1172. It includes a basic profile page with many basic functions, it has yet to include css or javascript.
                         Instructions located <a href="https://rkileaders.teachable.com/courses/764038/lectures/13897368">here</a>
                     </p>
             </div>
+            <div>
+                <h2 class="center">Project 1, Milestone 2</h2>
+                    <p>
+                        This webpage has been modified with a bit of css. Instructions located <a href="https://rkileaders.teachable.com/courses/764038/lectures/14006347">here</a>
+                    </p>
+            </div>
+            <div>
+                <h2 class="center">Project 1, Milestone 3</h2>
+                    <p>
+                        This webpage has been overhauled using bootstrap 4. Instructions located <a href="https://rkileaders.teachable.com/courses/764038/lectures/14221053">here</a>
+                    </p>
     </div>
-
 </body>
 </html>
